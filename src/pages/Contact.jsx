@@ -166,7 +166,9 @@ function Contact() {
             </div>
             <div className="glass-card p-6 min-w-0 overflow-hidden">
               <p className="text-sm uppercase tracking-[0.3em] text-emerald-700">Email</p>
-              <a href="mailto:cavipinsingh2025@gmail.com" className="mt-2 block text-lg font-semibold text-slate-900 break-all hover:text-emerald-700">cavipinsingh2025@gmail.com</a>
+              <a href="mailto:cavipinsingh2025@gmail.com" className="mt-2 block text-lg font-semibold text-slate-900 break-normal hover:text-emerald-700">
+                cavipinsingh2025@<wbr />gmail.com
+              </a>
             </div>
           </div>
         </motion.div>
