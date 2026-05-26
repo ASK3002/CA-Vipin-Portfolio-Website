@@ -75,12 +75,12 @@ function Home() {
           </motion.div>
         </div>
 
-        <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.2 }} className="hidden items-center justify-center lg:flex">
-          <div className="relative overflow-hidden rounded-[2rem] border-x border-white/20 bg-white/5 shadow-xl shadow-black/10">
+        <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.2 }} className="flex items-center justify-center">
+          <div className="relative overflow-hidden rounded-[2rem] border-x border-white/20 bg-white/5 shadow-xl shadow-black/10 max-w-xl w-full">
             <img
               src={heroImage}
               alt="Chartered Accountant illustration"
-              className="h-[420px] w-full object-cover"
+              className="h-[320px] w-full object-cover sm:h-[420px]"
               style={{
                 WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)',
                 maskImage: 'linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)',
