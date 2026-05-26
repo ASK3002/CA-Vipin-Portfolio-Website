@@ -160,13 +160,13 @@ function Contact() {
           <h2 className="mt-3 text-3xl font-semibold text-slate-900">Contact our expert finance team today.</h2>
           <p className="mt-4 text-slate-700">We are available to discuss your accounting, taxation, and compliance requirements and deliver a solution tailored to your business.</p>
           <div className="mt-8 grid gap-4">
-            <div className="glass-card p-6">
+            <div className="glass-card p-6 min-w-0 overflow-hidden">
               <p className="text-sm uppercase tracking-[0.3em] text-emerald-700">WhatsApp</p>
-              <a href="https://wa.me/918652119165" target="_blank" rel="noreferrer" className="mt-2 block text-lg font-semibold text-slate-900 hover:text-emerald-700">+91 86521 19165</a>
+              <a href="https://wa.me/918652119165" target="_blank" rel="noreferrer" className="mt-2 block text-lg font-semibold text-slate-900 break-all hover:text-emerald-700">+91 86521 19165</a>
             </div>
-            <div className="glass-card p-6">
+            <div className="glass-card p-6 min-w-0 overflow-hidden">
               <p className="text-sm uppercase tracking-[0.3em] text-emerald-700">Email</p>
-              <a href="mailto:cavipinsingh2025@gmail.com" className="mt-2 block text-lg font-semibold text-slate-900 hover:text-emerald-700">cavipinsingh2025@gmail.com</a>
+              <a href="mailto:cavipinsingh2025@gmail.com" className="mt-2 block text-lg font-semibold text-slate-900 break-all hover:text-emerald-700">cavipinsingh2025@gmail.com</a>
             </div>
           </div>
         </motion.div>
