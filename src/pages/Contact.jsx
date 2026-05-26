@@ -41,9 +41,9 @@ function Contact() {
   }, [status.submitted, status.error])
 
   return (
-    <div className="mx-auto max-w-7xl px-6 pb-16 pt-10 lg:px-8">
+    <div className="mx-auto max-w-7xl px-6 pb-16 pt-10 lg:px-8 overflow-x-hidden">
       <section className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="space-y-6">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="space-y-6 min-w-0">
           <p className="text-sm uppercase tracking-[0.3em] text-emerald-700">Contact</p>
           <h1 className="text-4xl font-semibold text-slate-900 sm:text-5xl">Get in touch with expert financial advisors.</h1>
           <p className="max-w-xl text-slate-700">Reach out for consultation, service inquiries, or compliance support. We’re ready to help your business grow with confidence.</p>
@@ -67,7 +67,7 @@ function Contact() {
           </div>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }} className="space-y-6 rounded-[2rem] border border-slate-200/40 bg-[#f2e7d6]/90 p-8 shadow-premium">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }} className="space-y-6 rounded-[2rem] border border-slate-200/40 bg-[#f2e7d6]/90 p-8 shadow-premium min-w-0">
           <p className="text-sm uppercase tracking-[0.3em] text-emerald-700">Send a message</p>
 
           <form onSubmit={handleSubmit} className="grid gap-4">
@@ -144,10 +144,10 @@ function Contact() {
       <section className="mt-12 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
         <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="rounded-[2rem] border border-slate-200/40 bg-[#f2e7d6]/90 p-8 shadow-premium">
           <p className="text-sm uppercase tracking-[0.3em] text-emerald-700">Embedded Map</p>
-          <div className="mt-6 overflow-hidden rounded-[1.75rem] border border-slate-200/40 bg-[#ede2cd]">
+          <div className="mt-6 overflow-hidden rounded-[1.75rem] border border-slate-200/40 bg-[#ede2cd] min-w-0">
             <iframe
               title="V A SINGH & CO - Location"
-              className="h-96 w-full border-0"
+              className="h-96 w-full max-w-full min-w-0 border-0"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.0825670424477!2d73.17213107554799!3d19.20102424832669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7eed252e5a5%3A0x378d2d1ee2ce68f2!2sLodha%20Signet!5e0!3m2!1sen!2sin!4v1718532261466!5m2!1sen!2sin"
               allowFullScreen=""
               loading="lazy"
@@ -155,7 +155,7 @@ function Contact() {
           </div>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="rounded-[2rem] border border-slate-200/40 bg-[#f2e7d6]/90 p-8 shadow-premium">
+        <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="rounded-[2rem] border border-slate-200/40 bg-[#f2e7d6]/90 p-8 shadow-premium min-w-0">
           <p className="text-sm uppercase tracking-[0.3em] text-emerald-700">Need urgent support?</p>
           <h2 className="mt-3 text-3xl font-semibold text-slate-900">Contact our expert finance team today.</h2>
           <p className="mt-4 text-slate-700">We are available to discuss your accounting, taxation, and compliance requirements and deliver a solution tailored to your business.</p>
